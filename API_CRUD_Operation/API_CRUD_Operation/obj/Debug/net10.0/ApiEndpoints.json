@@ -1,0 +1,131 @@
+[
+  {
+    "ContainingType": "API_CRUD_Operation.Controllers.CRUDOperationController",
+    "Method": "GetStudentData",
+    "RelativePath": "api/CRUDOperation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[API_CRUD_Operation.Models.Student, API_CRUD_Operation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_CRUD_Operation.Controllers.CRUDOperationController",
+    "Method": "AddStudentData",
+    "RelativePath": "api/CRUDOperation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "std",
+        "Type": "API_CRUD_Operation.Models.Student",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_CRUD_Operation.Models.Student",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_CRUD_Operation.Controllers.CRUDOperationController",
+    "Method": "GetStudentByID",
+    "RelativePath": "api/CRUDOperation/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_CRUD_Operation.Models.Student",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_CRUD_Operation.Controllers.CRUDOperationController",
+    "Method": "UpdateStudentData",
+    "RelativePath": "api/CRUDOperation/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "std",
+        "Type": "API_CRUD_Operation.Models.Student",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_CRUD_Operation.Models.Student",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_CRUD_Operation.Controllers.CRUDOperationController",
+    "Method": "DeleteStudentData",
+    "RelativePath": "api/CRUDOperation/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_CRUD_Operation.Models.Student",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
